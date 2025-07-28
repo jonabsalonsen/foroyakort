@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>Føroyakort við dýbd og hædd</title>
+   <link rel="icon" type="image/png" href="favicon.png">
+   <link rel="stylesheet" href="style.css">
+   <script type="text/javascript" src="./Files/esShader.js" defer></script>
+   <script type="text/javascript" src="./Files/esUtil.js" defer></script>
+   <script type="text/javascript" src="app.js" defer></script>
+</head>
+
+<body onload="main();">
+
+   <div id="map" class="wrapper">
+      <canvas id="webgl-canvas" style="border: none;"></canvas>
+      <div id="navigation-info" class="text info">
+         Navigate <img src="images/compass-northeast-icon.svg" />:
+         <ul id="PC" hidden>
+            <li id="zoom" class="icon">Zoom: mouse wheel <img src="images/mouse-scroll-wheel-icon.svg" /></li>
+            <li id="navigate" class="icon">Move around: click and drag <img src="images/mouse-cursor-icon.svg" /></li>
+            <li id="sea-level" class="icon">Adjust sea level: scroll bar <img src="images/sort-arrows-icon.svg" /> to
+               the right <img src="images/arrow-right-icon.svg" /></li>
+         </ul>
+         <ul id="mobile" hidden>
+            <li id="zoom" class="icon">Zoom: two finger pinch <img src="images/pinch-easy-icon.svg" /></li>
+            <li id="navigate" class="icon">Move around: touch and drag <img src="images/slide-left-right-icon.svg" />
+            </li>
+            <li id="sea-level" class="icon">Adjust sea level: scroll bar <img src="images/sort-arrows-icon.svg" /> to
+               the right <img src="images/arrow-right-icon.svg" /></li>
+         </ul>
+      </div>
+
+      <div id="depthDisplay" class="text info"></div>
+      <div id="sea-level-div">
+         <input id="seaLevel" class="vertical-slider" type="range" min="-800" max="880" value="0">
+         <img id="scroll-info" src="images/sort-arrows-icon.svg" />
+      </div>
+
+   </div>
+</body>
+
+</html>
