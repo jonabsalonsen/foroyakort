@@ -1,6 +1,8 @@
 # Føroyakort
 Map of the Faroe Islands with adjustable sea level - Kort yvir Føroyar við broytiligum sjóvarmála.
 
+https://jonabsalonsen.github.io/foroyakort/
+
 <img width="373" height="668" alt="image" src="https://github.com/user-attachments/assets/a3957613-a79d-46fe-a012-9ae324e39005" />
 
 Sources:
